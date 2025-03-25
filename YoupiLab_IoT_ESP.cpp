@@ -1,7 +1,7 @@
 #include "YoupiLab_IoT_ESP.h"
 
 
-YoupiLab_IoT_ESP::YoupiLab_IoT_ESP(String APP_ID, String APP_KEY): _APP_ID(APP_ID), _APP_KEY(APP_KEY), _BASE_URL("https://iot.youpilab.com/api"),_BASE_OTA_API_URL("https://iot.youpilab.com/api"),_BASE_WEB_LOG_API_URL("https://yl-logs-node-server-jzre.onrender.com"){}
+YoupiLab_IoT_ESP::YoupiLab_IoT_ESP(String APP_ID, String APP_KEY): _APP_ID(APP_ID), _APP_KEY(APP_KEY), _BASE_URL("http://iot.youpilab.com/api"),_BASE_OTA_API_URL("http://iot.youpilab.com/api"),_BASE_WEB_LOG_API_URL("https://yl-logs-node-server-jzre.onrender.com"){}
 
 /********************************************** Les SETTER ET GETTER */
 
@@ -1096,7 +1096,7 @@ int YoupiLab_IoT_ESP::executeAction(int nbr_args, ...){
    return 0;
   }
   /*
-    send data on our iot platform (https://iot.youpilab.com); return 1 in case of success and 0 in case of failure
+    send data on our iot platform (http://iot.youpilab.com); return 1 in case of success and 0 in case of failure
   */
  
 int YoupiLab_IoT_ESP::sendData(){
